@@ -33,7 +33,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
 				try {
 					const {token} = JSON.parse(body)
 					const cookies = new Cookies(req, res, { secure: process.env.NODE_ENV !== 'development' })
-					cookies.set('access_token', token, {
+					cookies.set('accessToken', token, {
 						httpOnly: true,
 						sameSite: 'lax',
 					})
