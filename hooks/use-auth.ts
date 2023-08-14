@@ -10,7 +10,7 @@ export function useAuth(options?: Partial<any>) {
 		data: profile,
 		error,
 		mutate,
-	} = useSWR('/getAllPosts', {
+	} = useSWR('/profile', {
 		dedupingInterval: 60 * 60 * 1000, // 1hr
 		revalidateOnFocus: false,
 		...options,

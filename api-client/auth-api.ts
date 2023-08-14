@@ -11,6 +11,6 @@ export const authApi = {
 	},
 
 	getProfile() {
-		return axiosClient.get('/getAllPosts')
+		return axiosClient.get('/profile')
 	},
 }

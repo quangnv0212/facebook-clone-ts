@@ -19,7 +19,6 @@ export default function Home() {
   const onFinishFailed = (errorInfo: any) => {
     console.log("Failed:", errorInfo);
   };
-
   return (
     <Layout>
       <p>Login Form</p>
@@ -47,7 +46,6 @@ export default function Home() {
         >
           <Input.Password />
         </Form.Item>
-
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
           <Button type="default" htmlType="submit">
             Submit
